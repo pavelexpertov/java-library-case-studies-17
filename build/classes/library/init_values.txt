@@ -1,0 +1,30 @@
+
+        Member member1 = new Member("Jane");
+        Member member2 = new Member("Amir");
+        Member member3 = new Member("Astrid");
+        Member member4 = new Member("Andy");
+
+        theMembers.addMember(member1);
+        theMembers.addMember(member2);
+        theMembers.addMember(member3);
+        theMembers.addMember(member4);
+
+        Book book1 = new Book("American Gods", "Neil Gaiman", "1234");
+        Book book2 = new Book("The Circle", "Dave Eggers", "5678");
+        Book book3 = new Book("Pride and Justice", "Jane Austen", "9874");
+        Book book4 = new Book("The Handmaid's Tale", "Margaret Atwood", "3478");
+        Book book5 = new Book("Myths", "Neil Gaiman", "3434");
+        Book book6 = new Book("Grandioze", "Dave Eggers", "9889");
+
+        holdings.addBook(book1);
+        holdings.addBook(book2);
+        holdings.addBook(book3);
+        holdings.addBook(book4);
+        holdings.addBook(book5);
+        holdings.addBook(book6);
+
+        member1.borrowBook(book1);
+        member2.borrowBook(book2);
+
+        memberList.setListData(theMembers.toArray());
+        bookList.setListData(holdings.toArray());
